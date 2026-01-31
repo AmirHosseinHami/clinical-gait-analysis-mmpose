@@ -23,7 +23,7 @@ The pipeline processes monocular clinical walking videos to extract and analyze 
    - Videos are read frame by frame.
    - A pretrained **RTMPose whole-body model** is applied to each frame to estimate keypoints.
    - This specific model was chosen because it provides **more detailed keypoints for the lower limbs**, which is essential for gait analysis.
-   - Visualized skeletons are saved for qualitative inspection in `output_frames/`.
+   - Visualized skeletons are generated locally in `output_frames/` for qualitative inspection (not included in the repository due to size).
 
 2. #### Patient Selection
    - In multi-person videos, the patient of interest is selected using two functions in `knee_height.py`:
@@ -48,9 +48,8 @@ The repository is organized as follows:
 ```none
 .
 ├── data/                          # Folder containing input videos, including temp_video.mp4
-├── extract_pose_frames.py         # Runs pose estimation on a data/temp_video.mp4 and saves visualized skeleton frames in output_frames/
+├── extract_pose_frames.py         # Runs pose estimation on a data/temp_video.mp4 and saves visualized skeleton frames locally
 ├── knee_height.py                 # Tracks knee height over time and generates output plots in results/
-├── output_frames/                 # Folder where visualized pose frames from videos are saved
 ├── results/                       # Folder containing generated knee height plots 
 ```
 >  Note: The original video used in `knee_height.py` is confidential. Users should provide their own video file and update the `video_path` variable accordingly.

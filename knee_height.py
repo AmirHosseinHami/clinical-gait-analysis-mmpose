@@ -98,6 +98,7 @@ def select_patient_by_mask(keypoints_list, mask):
 
     return selected_kp
 
+
 # Note: The original video used in this analysis is confidential and cannot be shared.
 # Please replace 'video_path' with the path to your own video file for testing.
 video_path = (

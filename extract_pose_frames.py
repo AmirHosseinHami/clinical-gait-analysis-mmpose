@@ -13,7 +13,7 @@ inferencer = MMPoseInferencer("rtmpose-m_8xb64-270e_coco-wholebody-256x192")
 # Path to the input video
 video_path = "temp_video.mp4"
 
-# Final output directory
+# Directory to save visualized pose frames (created locally when running the script)
 final_output_dir = "output_frames"
 os.makedirs(final_output_dir, exist_ok=True)
 
