@@ -29,8 +29,8 @@ The pipeline processes monocular clinical walking videos to extract and analyze 
    - In multi-person videos, the patient of interest is selected using two functions in `knee_height.py`:
      - `extract_mask(start_frame, last_frame)`  
      - `select_patient_by_mask(keypoints_list, mask)`  
-   - These functions were adapted from a project by a colleague from my group.  
-   - The selection ensures that extracted keypoints correspond to the correct individual across all frames.
+   - These functions were adapted from a project by a [colleague](https://github.com/ebtehaj-m-tarazi) from my group.  
+   - The selection ensures that extracted keypoints scorrespond to the correct individual across all frames.
 
 3. #### Lower-Limb Keypoint Analysis
    - Extracts keypoints for knees.
